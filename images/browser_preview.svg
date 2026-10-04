@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" width="100%" height="100%">
+  <!-- Window container -->
+  <rect width="920" height="560" fill="rgb(15, 23, 42)" rx="10" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Browser Header -->
+  <rect width="920" height="42" fill="rgb(30, 41, 59)" rx="10"/>
+  <rect y="32" width="920" height="10" fill="rgb(30, 41, 59)"/>
+  <circle cx="22" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="58" cy="21" r="6" fill="#22c55e"/>
+
+  <!-- Address Bar -->
+  <rect x="180" y="8" width="560" height="26" rx="6" fill="rgb(15, 23, 42)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <g transform="translate(192, 14)">
+    <!-- Lock icon -->
+    <path d="M4 5V3a3 3 0 0 1 6 0v2h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1zm1.5 0h3V3a1.5 1.5 0 0 0-3 0v2z" fill="#94a3b8" transform="scale(0.9)"/>
+  </g>
+  <text x="212" y="25" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">http://128.199.200.100</text>
+
+  <!-- Web Content Area -->
+  <g transform="translate(140, 80)">
+    <!-- Card Container -->
+    <rect width="640" height="420" rx="16" fill="rgba(30, 41, 59, 0.75)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+    
+    <!-- Top accent bar -->
+    <rect width="640" height="4" rx="2" fill="url(#rainbow)"/>
+    <defs>
+      <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ef4444"/>
+        <stop offset="50%" stop-color="#f59e0b"/>
+        <stop offset="100%" stop-color="#38bdf8"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Badge -->
+    <rect x="235" y="40" width="170" height="28" rx="14" fill="rgba(239, 68, 68, 0.15)" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1"/>
+    <circle cx="252" cy="54" r="4" fill="#22c55e"/>
+    <text x="264" y="58" fill="#f87171" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" letter-spacing="1">NGINX WEB SERVER LIVE</text>
+
+    <!-- Main Heading -->
+    <text x="320" y="115" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="22" font-weight="800">
+      Welcome to PTIT DevOps Course - Session 02
+    </text>
+
+    <!-- Tagline -->
+    <text x="320" y="150" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">
+      Trang web tĩnh đã được triển khai và cấu hình thành công trên Nginx Web Server.
+    </text>
+
+    <!-- Server Info Grid -->
+    <g transform="translate(60, 190)">
+      <rect width="520" height="120" rx="10" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+
+      <!-- Item 1 -->
+      <g transform="translate(24, 25)">
+        <text x="0" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-transform="uppercase">WEB SERVER</text>
+        <text x="0" y="44" fill="#f8fafc" font-family="'Consolas', monospace" font-size="14" font-weight="600">Nginx / Ubuntu 22.04</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(200, 25)">
+        <text x="0" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-transform="uppercase">PORT</text>
+        <text x="0" y="44" fill="#22c55e" font-family="'Consolas', monospace" font-size="14" font-weight="600">80 (HTTP)</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(320, 25)">
+        <text x="0" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-transform="uppercase">DOCUMENT ROOT</text>
+        <text x="0" y="44" fill="#38bdf8" font-family="'Consolas', monospace" font-size="13" font-weight="600">/var/www/ptit-web/html</text>
+      </g>
+
+      <!-- Status indicator footer inside card -->
+      <line x1="20" y1="80" x2="500" y2="80" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <circle cx="30" cy="100" r="3.5" fill="#22c55e"/>
+      <text x="42" y="104" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Server Block: /etc/nginx/sites-available/ptit-web.conf (Enabled)</text>
+    </g>
+
+    <!-- Footer Note -->
+    <text x="320" y="375" text-anchor="middle" fill="#64748b" font-family="'Inter', sans-serif" font-size="12">
+      Học viện Công nghệ Bưu chính Viễn thông (PTIT) • DevOps Fundamentals
+    </text>
+  </g>
+</svg>
